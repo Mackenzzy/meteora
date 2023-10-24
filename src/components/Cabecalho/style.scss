@@ -1,0 +1,46 @@
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px;
+    align-items: center;
+    
+
+
+    ul{
+        display: flex;
+        gap: 1.2rem;
+        align-items: end;
+
+
+        li{
+            display: flex;
+            font-size: 16px;
+            line-height: 23px;
+            font-weight: 400;
+
+            
+
+            a{
+                color: #fff;
+                text-decoration: none;
+                
+            }
+        }
+    }
+    .alinhamento{
+        display: flex;
+        gap: 1.2rem;
+        align-items: first baseline;
+        img{      
+            height:100%;
+            width: 132px;
+            cursor: pointer;
+            margin-left: 20px;
+    
+        }
+    }
+    
+}
+
