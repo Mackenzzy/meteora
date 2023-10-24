@@ -1,11 +1,13 @@
 import React from "react";
 import CampodeBusca from "../CampoDeBusca";
+import HamburgerMenu from "./HamburgerMenu";
 import "./style.scss";
 
 class Cabecalho extends React.Component {
     render() {
         return (
             <div className="cabecalho">
+                
                 <div className="alinhamento">
                 <img src="./imagens/logo/logo-desktop.png" alt="logo" />
                     
@@ -19,7 +21,10 @@ class Cabecalho extends React.Component {
 
 
                     </div>
+                    <HamburgerMenu/>
+                    
                 <CampodeBusca />
+                
                 
             </div>
         );
