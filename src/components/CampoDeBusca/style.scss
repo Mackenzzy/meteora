@@ -6,6 +6,9 @@
     display: flex;
     gap: 10px;
 }
+.corDoFundo{
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .formulario{
         margin: 1.3em;
@@ -19,6 +22,7 @@
             height: 2rem;
         }
         .corDoFundo{
+            display: block;
             padding: 0.5rem 1rem;        
             background-color: #fff;
         }

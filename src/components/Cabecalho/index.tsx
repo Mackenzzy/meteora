@@ -20,11 +20,12 @@ class Cabecalho extends React.Component {
                         <li><a href="#">Promoções</a></li>
                     </ul>
 
-                    <div className="buscaVisivel">
-                    <CampodeBusca />
+               
+
 
                     </div>
-
+                    <div className="buscaVisivel">
+                        <CampodeBusca />
 
                     </div>
                     <HamburgerMenu/>
