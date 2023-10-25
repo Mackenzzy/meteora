@@ -6,7 +6,8 @@ import "./style.scss";
 class Cabecalho extends React.Component {
     render() {
         return (
-            <div className="cabecalho">
+            <div>
+                <div className="cabecalho">
                 
                 <div className="alinhamento">
                 <img src="./imagens/logo/logo-desktop.png" alt="logo" />
@@ -19,11 +20,21 @@ class Cabecalho extends React.Component {
                         <li><a href="#">Promoções</a></li>
                     </ul>
 
+                    <div className="buscaVisivel">
+                    <CampodeBusca />
+
+                    </div>
+
 
                     </div>
                     <HamburgerMenu/>
-                    
+                   
+                   
+                    </div>
+                    <div className="corDoFundo">
                     <CampodeBusca />
+                    </div>
+                    
                 
                 
             </div>
