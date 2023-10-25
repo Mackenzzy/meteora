@@ -23,7 +23,7 @@ class Cabecalho extends React.Component {
                     </div>
                     <HamburgerMenu/>
                     
-                <CampodeBusca />
+                    <CampodeBusca />
                 
                 
             </div>

@@ -9,10 +9,11 @@ class CampodeBusca extends React.Component {
                             <input className="campoDeBusca" placeholder="Digite o produto" type="text" />
                             <Botao />
             </form>
-
+            
         );
 
     }
 }
+
 
 export default CampodeBusca
