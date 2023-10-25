@@ -15,13 +15,21 @@ const categoriasLista = [
 class ListaCategorias extends Component {
     render(){
         return (
+            
             <section className="listaCategorias">
-                {categoriasLista.map((categoria, index) => (
+                <div>
+                    <h2>Busque por Categoria:</h2>
+                </div>
+                <div className="categorias">  
+                    {categoriasLista.map((categoria, index) => (
                     <Categoria 
                     key={index} 
                     nome={categoria.nome} 
                     imagem={categoria.imagem} />
                 ))}
+
+                </div>
+              
             </section>
         )
     }

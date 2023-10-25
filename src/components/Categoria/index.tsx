@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './style.scss';
 
 interface Props{
     nome:string,
@@ -7,7 +8,7 @@ interface Props{
 
 const Categoria: React.FC<Props> = ({ nome, imagem }) => {
     return (
-      <div className="categoria">
+      <div className="card-categoria">
         <img src={imagem} alt={nome} />
         <p className="categoria-legenda">{nome}</p>
       </div>

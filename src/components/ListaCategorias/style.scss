@@ -1,3 +1,22 @@
 .listaCategorias{
+    margin: 1.5rem 0;
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #3d3d3d;
+        font-family: var(--main-font);
+
+
+    }
+
+}
+.categorias{
+    margin: 1.5rem 0;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
 }
