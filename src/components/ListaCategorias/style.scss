@@ -11,20 +11,25 @@
 
 }
 .categorias{
-    margin: 1.5rem 0;
+    margin: 1.5rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
 
     :hover{ 
         cursor: pointer;
         img{
             transform: scale(1.1);
             transition: 0.5s ease-out;    
+
         }
     }
 
-
-
+}
+@media screen and (max-width: 768px) {
+    .categorias{
+        margin: 1.5rem 5rem;
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
 }
