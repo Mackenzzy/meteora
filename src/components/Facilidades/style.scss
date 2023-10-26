@@ -1,6 +1,12 @@
 .fundo{
+    background-color: #000;    
+}
+
+.alinhamento{
     padding: 1.5rem 0;
-    background-color: #000;
+
+    display: inline-block;
+
     h2{
         text-align: center;
         font-size: 2rem;
@@ -21,10 +27,13 @@
     }
 }
 .facilidades{
-
     display: flex;
-    padding: 1.5rem 0;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    padding: 1.5rem 0;
+
 }
 .facilidades-itens{
     display: flex;

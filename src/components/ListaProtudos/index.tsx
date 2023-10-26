@@ -54,7 +54,7 @@ class ListaProdutos extends Component {
             
             <section className="listaProdutos">
                 <div >
-                    <h2>Produtos</h2>
+                    <h2>Produtos que estão bombando!</h2>
                 </div>
                 <div className="produtos">  
                     {Lista.map((produto, index) => (
