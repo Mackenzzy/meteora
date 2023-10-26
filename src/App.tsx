@@ -5,6 +5,7 @@ import Cabecalho from './components/Cabecalho';
 import Facilidades from './components/Facilidades';
 import ListaCategorias from './components/ListaCategorias';
 import ListaProdutos from './components/ListaProtudos';
+import Newsletter from './components/Newsletter';
 import Rodape from './components/Rodape';
 import Banner from './pages/Home/Banner';
 
@@ -16,6 +17,7 @@ function App() {
      <ListaCategorias/>
      <ListaProdutos/>
      <Facilidades/>
+     <Newsletter/>
      <Rodape />
 
 
