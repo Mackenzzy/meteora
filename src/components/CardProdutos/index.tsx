@@ -1,4 +1,5 @@
 import React from "react";
+import BotaoRoxo from "../BotaoRoxo/inde";
 import './style.scss';
 
 interface Props{
@@ -17,7 +18,7 @@ const CardProdutos: React.FC<Props> = ({imagem, altImagem, nome, descricao, prec
             <h2>{nome}</h2>
             <p>{descricao}</p>
             <h3>R$ {preco}</h3>
-            <button>Ver Mais</button>
+            <BotaoRoxo texto="Ver mais"/>
         </div>);
     }
 }
