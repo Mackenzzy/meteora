@@ -1,5 +1,12 @@
+
 .listaCategorias{
+    display: inline-block;
+    justify-content: space-between;
+    gap: 0 1.5rem;
     margin: 1.5rem 0;
+    max-width:1440px ;
+
+
     h2{
         text-align: center;
         font-size: 1.5rem;
@@ -11,10 +18,12 @@
 
 }
 .categorias{
+
     margin: 1.5rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 0 1.5rem;
 
     :hover{ 
         cursor: pointer;
