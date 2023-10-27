@@ -38,3 +38,31 @@
         object-fit: cover;
     }
 }
+input[type="radio"] {
+    display: none; /* Esconde o botão de rádio padrão */
+  }
+  
+  /* Estilo para os rótulos das opções de rádio */
+  label {
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para a bolinha do rádio */
+  label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000; /* Cor da borda padrão */
+    border-radius: 50%; /* Torna a bolinha redonda */
+  }
+  
+  /* Estilo para a bolinha do rádio quando a opção está selecionada */
+  input[type="radio"]:checked + label::before {
+    border: 2px solid rgb(6, 160, 248); /* Cor da borda roxa quando selecionada */
+  }
