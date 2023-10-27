@@ -5,12 +5,13 @@ import Cabecalho from './components/Cabecalho';
 import Facilidades from './components/Facilidades';
 import ListaCategorias from './components/ListaCategorias';
 import ListaProdutos from './components/ListaProtudos';
-import ModalProduto from './components/ModalProduto';
+import Modal from './components/ModalProduto';
 import Newsletter from './components/Newsletter';
 import Rodape from './components/Rodape';
 import Banner from './pages/Home/Banner';
 
 function App() {
+
   return (
     <div className="App">
      <Cabecalho>  </Cabecalho>
@@ -21,7 +22,6 @@ function App() {
      <Newsletter/>
      <Rodape />
 
-     <ModalProduto/>
 
 
     </div>
