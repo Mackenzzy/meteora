@@ -17,7 +17,7 @@ const CardProdutos: React.FC<Props> = ({imagem, altImagem, nome, descricao, prec
     const [isOpen, setIsOpen] = useState<boolean>(false);
         return (
         <div className="cardProdutos">
-            <img src={imagem} alt={altImagem} />
+            <img className="imagem" src={imagem} alt={altImagem} />
             <h2>{nome}</h2>
             <p>{descricao}</p>
             <h3>R$ {preco}</h3>

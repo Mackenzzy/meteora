@@ -7,6 +7,35 @@
     color: black;   
     background-color: rgba(0, 0, 0, 0.514);
 }
+.titulo{
+    text-align: left;
+}
+.fundo-modal2{
+    background-color: #fff;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    width: 62.3%;
+    height: 80%;
+    gap: 1rem;
+}
+.descricao{
+  padding-bottom: 1rem;
+  border-bottom: #000 solid 1px;
+}
+.entregue{
+  color: #ccc;
+  padding-bottom: 1rem;
+  border-bottom: #ccc solid 1px;
+}
+.cores{
+  padding-bottom: 1rem;
+  border-bottom: #000 solid 1px;
+}
+.tamanho{
+  padding-bottom: 1rem;
+
+}
 
 .produto-modal{
     background-color: #fff;
@@ -15,11 +44,12 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 10%;
+    top: 20%;
     left: 20%;
     width: 60%;
-    height: 80%;
+    height: 70%;
     gap: 1rem;
+    padding: 1rem;
 
 }
 .info{
@@ -27,9 +57,10 @@
     width: 100%;
     height: 100%;
     text-align: left;
+    padding: 0 3rem 0 1rem;
 }
-.imagem{
-    margin-top: 10%;
+.imagem-modal{
+    padding: 0 1rem 0 3rem;
     width: 100%;
     height: 100%;
     img{
@@ -55,7 +86,8 @@ input[type="radio"] {
   label {
     display: block;
     position: relative;
-    margin-top: 5px; /* Espaço entre a bolinha e o texto */
+    margin-top: 5px;
+    font-size: 0.8rem; 
     cursor: pointer;
   }
   
@@ -75,4 +107,28 @@ input[type="radio"] {
     background: rgb(0, 153, 255);
     border: 3px solid #9353ff; /* Cor da borda roxa quando selecionada */
   }
-  
+
+
+.topo-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    height:auto;
+    background-color: #000;
+}
+.texto-topo{
+    color: #fff;
+}
+.orientacao-topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fechar-modal{
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
