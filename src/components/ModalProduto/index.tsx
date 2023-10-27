@@ -37,33 +37,49 @@ export default function Modal({ isOpen, setIsOpen }: IModal) {
                                 </p>
                                 <p>Cores</p>
                                 <div className="cores">
+                                    <div className="radio-container" >
                                     <input type="radio" id="azul-claro" name="cor" value="Azul Claro" />
                                     <label htmlFor="azul-claro">Azul Claro</label>
+                                    </div>
 
+                                    <div className="radio-container" >
                                     <input type="radio" id="offwhite" name="cor" value="Offwhite" />
                                     <label htmlFor="offwhite">Offwhite</label>
+                                    </div>
 
+                                    <div className="radio-container" >
                                     <input type="radio" id="preto" name="cor" value="Preto" />
                                     <label htmlFor="preto">Preto</label>
+                                    </div>
                                     <br />
                                     <hr />
                                 </div>
                                 <p>Tamanho</p>
-                                <div className="cores">
-                                    <input type="radio" id="P" name="cor" value="Azul Claro" />
-                                    <label htmlFor="azul-claro">P</label>
+                                <div className="tamanho">
+                                    <div className="radio-container" >
+                                    <input type="radio" id="P" name="tamanho" value="P" />
+                                    <label htmlFor="P">P</label>
+                                    </div>
 
-                                    <input type="radio" id="PP" name="cor" value="Offwhite" />
-                                    <label htmlFor="offwhite">PP</label>
+                                    <div className="radio-container" >
+                                    <input type="radio" id="PP" name="tamanho" value="PP" />
+                                    <label htmlFor="PP">PP</label>
+                                    </div>
 
-                                    <input type="radio" id="M" name="cor" value="Preto" />
-                                    <label htmlFor="preto">M</label>
+                                    <div className="radio-container" >
+                                    <input type="radio" id="M" name="tamanho" value="M" />
+                                    <label htmlFor="M">M</label>
+                                    </div>
 
-                                    <input type="radio" id="G" name="cor" value="Preto" />
-                                    <label htmlFor="preto">G</label>
+                                    <div className="radio-container" >
+                                    <input type="radio" id="G" name="tamanho" value="G" />
+                                    <label htmlFor="G">G</label>
+                                    </div>
 
-                                    <input type="radio" id="GG" name="cor" value="Preto" />
-                                    <label htmlFor="preto">GG</label>
+                                    <div className="radio-container" >
+                                    <input type="radio" id="GG" name="tamanho" value="GG" />
+                                    <label htmlFor="GG">GG</label>
+                                    </div>
                                     <br />
                                     <hr />
                                 </div>

@@ -33,36 +33,46 @@
     width: 100%;
     height: 100%;
     img{
-        min-width: 500px;
-        min-height: 600px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 }
+/* Estilo para os inputs de rádio */
 input[type="radio"] {
     display: none; /* Esconde o botão de rádio padrão */
   }
   
-  /* Estilo para os rótulos das opções de rádio */
+  /* Estilo para o contêiner que envolve o rótulo e a bolinha */
+  .radio-container {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px; /* Espaço entre as opções */
+    cursor: pointer;
+  }
+  
+  /* Estilo para o rótulo das opções de rádio */
   label {
-    display: flex;
+    display: block;
     position: relative;
-    padding-left: 30px;
+    margin-top: 5px; /* Espaço entre a bolinha e o texto */
     cursor: pointer;
   }
   
   /* Estilo para a bolinha do rádio */
   label::before {
     content: '';
-    position: absolute;
-    left: 0;
-    top: 1px;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #000; /* Cor da borda padrão */
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto 5px; /* Centraliza a bolinha e cria espaço abaixo para o texto */
+    border: 1px solid #000; /* Cor da borda padrão */
     border-radius: 50%; /* Torna a bolinha redonda */
   }
   
   /* Estilo para a bolinha do rádio quando a opção está selecionada */
   input[type="radio"]:checked + label::before {
-    border: 2px solid rgb(6, 160, 248); /* Cor da borda roxa quando selecionada */
+    background: rgb(0, 153, 255);
+    border: 3px solid #9353ff; /* Cor da borda roxa quando selecionada */
   }
+  
