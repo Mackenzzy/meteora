@@ -22,7 +22,7 @@ const CardProdutos: React.FC<Props> = ({imagem, altImagem, nome, descricao, prec
             <p>{descricao}</p>
             <h3>R$ {preco}</h3>
             <button onClick={() => setIsOpen(!isOpen)}> Ver mais </button>
-            <Modal isOpen={isOpen}/>
+            <Modal isOpen={isOpen} setIsOpen={setIsOpen}/>
         </div>);
     }
 }
