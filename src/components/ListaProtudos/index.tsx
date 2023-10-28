@@ -6,6 +6,7 @@ import produtos from "../../data/Produtos/produtos.json";
 
 
 class ListaProdutos extends Component {
+
     render(){
         return (
             
@@ -16,7 +17,7 @@ class ListaProdutos extends Component {
                 <div className="produtos">  
                     {produtos.map((produto, index) => (
                     <CardProdutos 
-                    key={index} 
+                    id={produto.id} 
                     imagem={produto.imagem} 
                     altImagem={produto.altImagem} 
                     nome={produto.nome} 

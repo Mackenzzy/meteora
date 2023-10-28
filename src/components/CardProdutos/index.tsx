@@ -8,12 +8,13 @@ interface Props{
     altImagem: string,
     nome:string,
     descricao:string,
-    preco:string
+    preco:string,
+    id:number
 }
 
 
 
-const CardProdutos: React.FC<Props> = ({imagem, altImagem, nome, descricao, preco}) => { {
+const CardProdutos: React.FC<Props> = ({imagem, altImagem, nome, descricao, preco,id}) => { {
     const [isOpen, setIsOpen] = useState<boolean>(false);
         return (
         <div className="cardProdutos">
@@ -21,7 +22,7 @@ const CardProdutos: React.FC<Props> = ({imagem, altImagem, nome, descricao, prec
             <h2>{nome}</h2>
             <p>{descricao}</p>
             <h3>R$ {preco}</h3>
-            <button onClick={() => setIsOpen(!isOpen)}> Ver mais </button>
+            <button  onClick={() => setIsOpen(!isOpen)}> Ver mais </button>
             <Modal isOpen={isOpen} setIsOpen={setIsOpen}/>
         </div>);
     }

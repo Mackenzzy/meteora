@@ -1,6 +1,7 @@
 import './style.scss'
 import produtos from "../../data/Produtos/produto.json";
 import BotaoRoxo from '../BotaoRoxo/inde';
+
 interface IModal {
     isOpen: boolean,
     setIsOpen: (isOpen: boolean) => void
@@ -11,7 +12,7 @@ export default function Modal({ isOpen, setIsOpen }: IModal) {
     if (isOpen) {
         return (
             <div className="modal-fundo">
-                {produtos.map((produto, index) => (
+                {produtos.map((produto, id) => (
                     <div className="fundo-modal2">
                         <div className="topo-modal">
                             <div className="orientacao-topo">
@@ -21,7 +22,7 @@ export default function Modal({ isOpen, setIsOpen }: IModal) {
                             <img className="fechar-modal" src="./imagens/assets/x.png" alt="" onClick={() => setIsOpen(false)} />
                         </div>
 
-                        <div className="produto-modal" key={index}>
+                        <div className="produto-modal" key={id}>
 
 
                             <div className="imagem-modal">
