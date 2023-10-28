@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "image": "./imagens/Banners/BannerCarrossel1.png"
+    },
+    {
+        "id":2,
+        "image": "./imagens/Banners/BannerCarrossel2.png"
+    },
+    {
+        "id":3,
+        "image": "./imagens/Banners/BannerCarrossel3.png"
+    }
+]
