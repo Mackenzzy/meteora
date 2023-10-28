@@ -1,18 +1,26 @@
 import './style.scss'
-import produtos from "../../data/Produtos/produto.json";
+import produtos from "../../data/Produtos/produtos.json";
 import BotaoRoxo from '../BotaoRoxo/inde';
 
+// Em ModalProduto.tsx ou onde quer que você defina a interface
 interface IModal {
-    isOpen: boolean,
-    setIsOpen: (isOpen: boolean) => void
-
+    isOpen: boolean;
+    setIsOpen: (isOpen: boolean) => void;
+    selectedProductId: number | null;
+    setSelectedProductId: (productId: number | null) => void;
 }
 
-export default function Modal({ isOpen, setIsOpen }: IModal) {
-    if (isOpen) {
+export default function Modal({ isOpen, setIsOpen, selectedProductId, setSelectedProductId }: IModal) {
+    if (isOpen && selectedProductId !== null) {
+        const selectedProduct = produtos.find((produto) => produto.id === selectedProductId);
+
+        if (!selectedProduct) {
+            return null;
+        }
+
         return (
             <div className="modal-fundo">
-                {produtos.map((produto, id) => (
+                {produtos.map((produto, index) => (
                     <div className="fundo-modal2">
                         <div className="topo-modal">
                             <div className="orientacao-topo">
@@ -22,11 +30,12 @@ export default function Modal({ isOpen, setIsOpen }: IModal) {
                             <img className="fechar-modal" src="./imagens/assets/x.png" alt="" onClick={() => setIsOpen(false)} />
                         </div>
 
-                        <div className="produto-modal" key={id}>
+                        <div className="produto-modal" key={index}>
 
 
                             <div className="imagem-modal">
                                 <img src={produto.imagem} alt="" />
+                                <p></p>
                             </div>
 
 

@@ -17,6 +17,7 @@ class ListaProdutos extends Component {
                 <div className="produtos">  
                     {produtos.map((produto, index) => (
                     <CardProdutos 
+                    key={produto.id}
                     id={produto.id} 
                     imagem={produto.imagem} 
                     altImagem={produto.altImagem} 
