@@ -21,7 +21,7 @@ export default function Modal({ isOpen, setIsOpen, selectedProductId, setSelecte
         return (
             <div className="modal-fundo">
                 {produtos.map((produto, index) => (
-                    <div className="fundo-modal2">
+                    <div className="fundo-modal-produto">
                         <div className="topo-modal">
                             <div className="orientacao-topo">
                                 <img src="./imagens/assets/v.png" alt="" />
