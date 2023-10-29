@@ -18,6 +18,8 @@
     width: 60%;
     height: 80%;
     gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 .descricao{
   padding-bottom: 1rem;
@@ -44,6 +46,7 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 3rem;
+
 
 }
 .info{
@@ -125,4 +128,15 @@ input[type="radio"] {
   cursor: pointer;
   width: 16px;
   height: 16px;
+}
+@media screen and (max-width: 768px) {
+  .produto-modal{
+  flex-direction: column;
+  padding: 0;
+  }
+  .imagem-modal{
+    padding: 0;
+  }
+
+  
 }

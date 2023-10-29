@@ -22,7 +22,6 @@ function App() {
      <Facilidades/>
      <Newsletter/>
      <Rodape />
-     <ModalNewsletter/>
 
 
     </div>

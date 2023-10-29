@@ -1,12 +1,18 @@
 import React from "react";
+import './style.scss';
 
 class ModalNewsletter extends React.Component {
     render() {
         return(
-        <div>
-                <div className="newsletter-topo">
+        <div className="newsletter-modal">
+                <div className="newsletter-modal-topo">
+
+
+                    <div className="newsletter-topo-texto">
                     <img src="./imagens/assets/v.png" alt="" />
                     <h3>Email Cadastrado com sucesso!</h3>
+                    </div>
+
                     <img src="./imagens/assets/x.png" alt="" />
                 </div>
                 <div>
