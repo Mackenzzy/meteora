@@ -46,8 +46,9 @@
     .cabecalho{
         display:flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 10px;
+        flex-wrap: nowrap;
+        padding: 1rem;
+        align-items: flex-start;
         ul{
             display: none;
             flex-direction: column;
@@ -63,6 +64,5 @@
         
 
     }
-    
 }
 
